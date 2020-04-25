@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1576750257336.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1466794635",
+    "id" : "33AE386F",
+    "lastKnownWriteTime" : 1576750424,
+    "last_content_update" : 1576750424755,
+    "path" : "~/INE.Packages.v2/StQ/R/dcast_StQ.R",
+    "project_path" : null,
+    "properties" : {
+        "cursorPosition" : "86,27",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 8,
+    "source_on_save" : true,
+    "source_window" : "",
+    "type" : "r_source"
+}

@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1531385494628.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1093217099",
+    "id" : "38A00F63",
+    "lastKnownWriteTime" : 1587802538,
+    "last_content_update" : 1587802538544,
+    "path" : "~/INE.Packages.v2/TSPred/R/RegDiffTSPred.R",
+    "project_path" : "R/RegDiffTSPred.R",
+    "properties" : {
+        "cursorPosition" : "118,34",
+        "scrollLine" : "107"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

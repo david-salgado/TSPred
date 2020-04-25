@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "Package: TSPred\nTitle: Point and std prediction of time series\nVersion: 0.4.1\nAuthor: David Salgado\nMaintainer: David Salgado <david.salgado.fernandez@ine.es>\nDescription: This package contains functions to make \n    predictions of time series. The functions are indeed \n    different methods for their corresponding generic\nDepends:\n    R (>= 3.3.0)\nImports:\n    data.table (>= 1.10.0),\n    RepoTime (>= 0.2.1),\n    StQ (>= 0.3.6),\n    forecast (>= 7.3),\n    imputeTS (>= 2.5),\n    parallel (>= 3.3.2)\nLicense: file LICENSE\nEncoding: UTF-8\nLazyData: true\nCollate:\n    'RegDiffTSPred.R'\n    'StatDiffTSPred.R'\n    'StatRegDiffTSPred.R'\n    'AutoArimaTSPred.R'\n    'FixedTSPred.R'\n    'Example1.TS.R'\n    'Example2.TS.R'\nRoxygenNote: 6.0.1\nURL: https://github.com/elisa-esteban/TSPred\nBugReports: https://github.com/elisa-esteban/TSPred/issues\n\n",
+    "created" : 1531386095621.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2194156809",
+    "id" : "DF98C1C6",
+    "lastKnownWriteTime" : 1531386102,
+    "last_content_update" : 1531386102931,
+    "path" : "~/INE.Packages.v2/TSPred/DESCRIPTION",
+    "project_path" : "DESCRIPTION",
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "dcf"
+}

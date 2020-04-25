@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1531386111316.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1737610201",
+    "id" : "78274E68",
+    "lastKnownWriteTime" : 1587802525,
+    "last_content_update" : 1587802525941,
+    "path" : "~/INE.Packages.v2/TSPred/R/StatDiffTSPred.R",
+    "project_path" : "R/StatDiffTSPred.R",
+    "properties" : {
+        "cursorPosition" : "122,35",
+        "scrollLine" : "99"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

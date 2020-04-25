@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "#' @title Method to predict a prefixed value for time series.\n#'\n#' @description This method implements the predicted value and their standard\n#' deviations as a prefixed value.\n#'\n#' @param x object upon which the prediction will be made.\n#'\n#' @param VarNames character vector with the variable names for which the\n#' prediction will be made; by default it is NULL.\n#'\n#' @param value numeric vector with the value for the prediction and the\n#' sta\n#'\n#' @return It returns a list with components Pred and STD, containing the point\n#' prediction and the standard deviations, respectively, with the prefixed value.\n#' Depending on the class of the input parameter x, it returns:\n#'\n#' \\itemize{\n#'  \\item For input class vector, it returns numeric vectors.\n#'  \\item For input class matrix, it returns matrices.\n#'  \\item For input class StQList, it returns list whose components are\n#'   data.tables.\n#' }\n#'\n#' @examples\n#'\n#' # Predicting one and two months ahead in time\n#' data(Example1.TS)\n#' FixedTSPred(Example1.TS, value = 0L)\n#'\n#' # Predicting upon a times series with many NA values\n#' data(Example2.TS)\n#' FixedTSPred(Example2.TS, value = 0L)\n#'\n#' \\dontrun{\n#' # With an object of class StQList\n#' data(StQListExample)\n#' VarNames <- c('ActivEcono_35._6._2.1.4._0', 'GeoLoc_35._6._2.1._1.2.5.')\n#' FixedTSPred(StQListExample, VarNames)\n#' }\n#'\n#' @import forecast imputeTS data.table StQ RepoTime parallel\n#'\n#' @export\nsetGeneric(\"FixedTSPred\", function(x, VarNames, value = 0L){\n    standardGeneric(\"FixedTSPred\")})\n#'\n#' @rdname FixedTSPred\n#'\n#' @export\nsetMethod(\n    f = \"FixedTSPred\",\n    signature = c(\"vector\"),\n    function(x, VarNames, value = 0L){\n\n        x <- as.numeric(x)\n        output <- data.table(Pred = value, STD = value)\n        return(output)\n\n    }\n)\n#'\n#' @rdname FixedTSPred\n#'\n#' @export\nsetMethod(\n    f = \"FixedTSPred\",\n    signature = c(\"StQList\"),\n    function(x, VarNames, value = 0L){\n\n        if (length(VarNames) == 0) stop('[TSPred:: FixedTSPred StQList] The input parameter VarNames must be specified.\\n')\n\n\n        DD <- getDD(x[[length(getData(x))]])\n        IDQuals <- getMicroData(DD)[Sort == 'IDQual'][['Variable']]\n\n        ouput <- unique(getUnits(x)[, (IDQuals), with = FALSE])\n        Vars <- unlist(lapply(VarNames, function(x){out <- paste0(c('Pred', 'STD'),x)}))\n\n        output <- ouput[ , (Vars) := value]\n        return(output)\n    }\n)\n",
+    "created" : 1531386138647.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4040365223",
+    "id" : "73854F11",
+    "lastKnownWriteTime" : 1531385471,
+    "last_content_update" : 1531385471,
+    "path" : "~/INE.Packages.v2/TSPred/R/FixedTSPred.R",
+    "project_path" : "R/FixedTSPred.R",
+    "properties" : {
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

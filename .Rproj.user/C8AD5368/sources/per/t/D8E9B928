@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1576748152370.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2975686048",
+    "id" : "D8E9B928",
+    "lastKnownWriteTime" : 1576744747,
+    "last_content_update" : 1576744747,
+    "path" : "~/INE.Packages.v2/BestTSPred/R/BestTSPred.R",
+    "project_path" : null,
+    "properties" : {
+        "cursorPosition" : "88,0",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 7,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
