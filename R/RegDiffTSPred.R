@@ -80,10 +80,10 @@ setMethod(
         } else {
 
             ejecuc <- try(
-                x <- imputeTS::na_kalman(x, type = 'level') # Needs at least 3 non-NA data point
+                x <- imputeTS::na_kalman(x) # , type = 'level' Needs at least 3 non-NA data point
             , silent = TRUE)
             if (inherits(ejecuc, "try-error")) {
-                x <- imputeTS::na_kalman(x) # type by default "BSM", other option: "trend"
+                x <- imputeTS::na_kalman(x, type = 'trend') # type by default "BSM", other option: "trend"
             }
 
         }
