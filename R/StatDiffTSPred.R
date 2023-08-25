@@ -85,7 +85,7 @@ setMethod(
 
         } else {
 
-          x <- imputeTS::na_kalman(x, type = 'level') # Needs at least 3 non-NA data point
+          x <- imputeTS::na_kalman(x) # Needs at least 3 non-NA data point
         }
 
        x <- ts(x, frequency = StatDiff)
