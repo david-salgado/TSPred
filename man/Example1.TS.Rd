@@ -4,7 +4,9 @@
 \name{Example1.TS}
 \alias{Example1.TS}
 \title{A vector containing a time series}
-\format{A vector of length 24}
+\format{
+A vector of length 24
+}
 \usage{
 data(Example1.TS)
 }

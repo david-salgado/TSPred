@@ -1,6 +1,6 @@
 Package: TSPred
 Title: Point and std prediction of time series
-Version: 0.4.16
+Version: 0.4.17
 Author: David Salgado
 Maintainer: David Salgado <david.salgado.fernandez@ine.es>
 Description: This package contains functions to make
@@ -27,6 +27,6 @@ Collate:
     'FixedTSPred.R'
     'Example1.TS.R'
     'Example2.TS.R'
-RoxygenNote: 6.1.1
+RoxygenNote: 7.1.2
 URL: https://github.com/elisa-esteban/TSPred
 BugReports: https://github.com/elisa-esteban/TSPred/issues
