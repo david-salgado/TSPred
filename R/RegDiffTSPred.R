@@ -85,17 +85,17 @@ setMethod(
             if (inherits(ejecuc, "try-error")) {
                 ejecuc <- try(
                     x <- imputeTS::na_kalman(x, type = 'trend') # type by default "BSM", other option: "trend"
-                )
+                , silent = TRUE)
             }
             if (inherits(ejecuc, "try-error")) {
                 ejecuc <- try(
                     x <- imputeTS::na_kalman(x, type = 'trend', optim.control = list(pgtol = 5)) # aumentamos la tolerancia en el algoritmo L-BFGS-B
-                )
+                    , silent = TRUE)
             }
             if (inherits(ejecuc, "try-error")) {
                 ejecuc <- try(
                     x <- imputeTS::na_kalman(x, type = 'trend', optim.control = list(pgtol = 10)) # aumentamos la tolerancia en el algoritmo L-BFGS-B
-                )
+                    , silent = TRUE)
             }
             if (inherits(ejecuc, "try-error")) {
                 print(x)
